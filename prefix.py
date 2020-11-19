@@ -6,6 +6,10 @@ def mask_function(long_mask):
                 return long
             else:
                 return long - 1
-
-mask = input("enter the mask ").split(".") 
-print(mask_function(mask))
+while True :
+    mask = input("enter the mask ").split(".") 
+    print(mask_function(mask))
+    isyes = input("would you like to continue yes or no")
+    if isyes != "yes" :
+        print("goodbye")
+        quit()
